@@ -13,6 +13,10 @@
         <module>cloud-learn-provider-dept-8001</module>
         <module>cloud-learn-consumer-dept-80</module>
         <module>cloud-learn-eureka-7001</module>
+        <module>cloud-learn-eureka-7002</module>
+        <module>cloud-learn-eureka-7003</module>
+        <module>cloud-learn-provider-dept-8002</module>
+        <module>cloud-learn-provider-dept-8003</module>
     </modules>
 
     <name>cloud-learn</name>
@@ -79,7 +83,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>cloudlearn</finalName>
+        <finalName>cloud-learn</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

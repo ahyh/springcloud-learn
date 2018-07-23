@@ -15,7 +15,8 @@ import java.util.List;
 @RestController
 public class DeptController_Consumer {
 
-    private static final String URL_PREFIX = "http://localhost:8001";
+    //    private static final String URL_PREFIX = "http://localhost:8001";
+    private static final String URL_PREFIX = "http://CLOUD-DEPT";
 
     /**
      * 注入RestTemplate
@@ -37,5 +38,11 @@ public class DeptController_Consumer {
     public List<Dept> list() {
         return restTemplate.getForObject(URL_PREFIX + "/dept/list", List.class);
     }
+
+    @RequestMapping(value = "/consumer/dept/discovery")
+    public Object discovery() {
+        return restTemplate.getForObject(URL_PREFIX + "/dept/discovery", Object.class);
+    }
+
 
 }

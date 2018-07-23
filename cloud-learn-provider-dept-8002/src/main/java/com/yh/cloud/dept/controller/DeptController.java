@@ -23,17 +23,17 @@ public class DeptController {
     @Resource
     private DiscoveryClient discoveryClient;
 
-    @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
+    @RequestMapping(value = "dept/add", method = RequestMethod.POST)
     public boolean add(@RequestBody Dept dept) {
         return deptService.add(dept);
     }
 
-    @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "dept/get/{id}", method = RequestMethod.GET)
     public Dept get(@PathVariable("id") Long id) {
         return deptService.get(id);
     }
 
-    @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
+    @RequestMapping(value = "dept/list", method = RequestMethod.GET)
     public List<Dept> list() {
         return deptService.list();
     }
@@ -43,7 +43,7 @@ public class DeptController {
      *
      * @return
      */
-    @RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
+    @RequestMapping(value = "dept/discovery", method = RequestMethod.GET)
     public Object discovery() {
         List<String> list = discoveryClient.getServices();
         System.out.println("**********" + list);
