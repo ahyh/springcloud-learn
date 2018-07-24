@@ -28,7 +28,7 @@ eureka:
                                                             #defaultZone: http://localhost:7001/eureka
        defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: cloud-dept
+    instance-id: cloud-dept8002
     prefer-ip-address: true                                 #访问路径可以显示IP地址
 
 info:

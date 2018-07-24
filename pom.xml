@@ -17,6 +17,7 @@
         <module>cloud-learn-eureka-7003</module>
         <module>cloud-learn-provider-dept-8002</module>
         <module>cloud-learn-provider-dept-8003</module>
+        <module>cloud-learn-consumer-dept-feign</module>
     </modules>
 
     <name>cloud-learn</name>
