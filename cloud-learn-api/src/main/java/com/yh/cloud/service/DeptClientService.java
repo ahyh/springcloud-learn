@@ -11,10 +11,11 @@ import java.util.List;
 
 /**
  * feign注解
+ * fallbackFactory:Hystrix实际业务方法抛出异常后的备选处理方法的服务集成类
  *
  * @author yanhuan1
  */
-@FeignClient(value = "CLOUD-DEPT")
+@FeignClient(value = "CLOUD-DEPT", fallbackFactory = DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 
     @RequestMapping(value = "/dept/add", method = RequestMethod.POST)

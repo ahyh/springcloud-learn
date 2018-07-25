@@ -18,6 +18,7 @@
         <module>cloud-learn-provider-dept-8002</module>
         <module>cloud-learn-provider-dept-8003</module>
         <module>cloud-learn-consumer-dept-feign</module>
+        <module>cloud-learn-provider-dept-hystrix-8001</module>
     </modules>
 
     <name>cloud-learn</name>
