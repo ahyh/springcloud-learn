@@ -19,6 +19,8 @@
         <module>cloud-learn-provider-dept-8003</module>
         <module>cloud-learn-consumer-dept-feign</module>
         <module>cloud-learn-provider-dept-hystrix-8001</module>
+        <module>cloud-learn-consumer-hystrix-dashboard</module>
+        <module>cloud-learn-zuul-gateway-9527</module>
     </modules>
 
     <name>cloud-learn</name>

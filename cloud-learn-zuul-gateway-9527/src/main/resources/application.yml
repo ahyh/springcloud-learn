@@ -1,0 +1,31 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: cloud-learn-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka,http://localhost:7003/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+ 
+ 
+zuul: 
+  prefix: /yanhuan
+  ignored-services: "*"
+  routes: 
+    mydept.serviceId: cloud-dept
+    mydept.path: /mydept/**
+ 
+info:
+  app.name: cloud-dept
+  company.name: www.yanhuan.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+
+
