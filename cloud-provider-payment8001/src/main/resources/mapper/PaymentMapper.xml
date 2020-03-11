@@ -10,7 +10,7 @@
     </resultMap>
 
     <select id="getPaymentById" resultMap="BaseResultMap">
-        SELECT * FROM payment WHERE id=#{id,jdbcType=BIGINT}
+        SELECT id, serial FROM payment WHERE id=#{id,jdbcType=BIGINT}
     </select>
 
     <insert id="insert" parameterType="Payment" keyProperty="id" useGeneratedKeys="true">

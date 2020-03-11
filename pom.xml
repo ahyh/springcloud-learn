@@ -12,6 +12,7 @@
         <module>cloud-provider-payment8001</module>
         <module>cloud-consumer-order80</module>
         <module>cloud-commons-api</module>
+        <module>cloud-eureka-server7001</module>
     </modules>
 
     <name>cloud-learn</name>
