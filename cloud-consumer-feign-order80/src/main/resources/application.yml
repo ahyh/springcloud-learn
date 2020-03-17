@@ -10,3 +10,14 @@ eureka:
 ribbon:
   eureka:
     enabled: true
+
+# 设置feign客户端超时时间
+ribbon:
+  ReadTimeount: 5000   # 建立连接所用的时间，适用于网络正常的情况下，两端连接所用的时间
+  ConnectTimeout: 5000 # 建立连接后从服务器读取到可用资源所用的时间
+
+
+
+logging:
+  level:
+  com.yh.cloud.service.PaymentFeignService: debug
