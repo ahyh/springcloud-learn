@@ -52,7 +52,8 @@ public class PaymentServiceImpl implements PaymentService {
             @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60") //失败率达到多少后跳闸
 
     })
-    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+    @Override
+    public String paymentCircuitBreaker(Integer id) {
         if (id < 0) {
             throw new RuntimeException("id cannot less 0");
         }
@@ -60,7 +61,7 @@ public class PaymentServiceImpl implements PaymentService {
         return "success:" + serial;
     }
 
-    public String paymentCircuitBreaker_fallback(@PathVariable("id") Integer id) {
+    public String paymentCircuitBreaker_fallback(Integer id) {
         return "id cannot less 0";
     }
 }
