@@ -1,2 +1,5 @@
 server:
   port: 8019
+
+config:
+  info: push yourself everyday

@@ -22,6 +22,7 @@
         <module>cloud-consumer-feign-hystrix-order80</module>
         <module>cloud-gateway9527</module>
         <module>cloud-config-center3344</module>
+        <module>cloud-config-client3355</module>
     </modules>
 
     <name>cloud-learn</name>
