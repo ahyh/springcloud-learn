@@ -21,6 +21,7 @@
         <module>cloud-provider-hystrix-payment8001</module>
         <module>cloud-consumer-feign-hystrix-order80</module>
         <module>cloud-gateway9527</module>
+        <module>cloud-config-center3344</module>
     </modules>
 
     <name>cloud-learn</name>
